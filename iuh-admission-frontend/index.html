@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Công Cụ Tính Điểm Xét Tuyển IUH</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="iuh-navigation">
+        <div class="main-banner-iuh">
+            <div class="banner-left-logo">
+                <img src="imgs/logo_iuh.png" alt="Logo IUH">
+                <div class="logo-text">
+                    <span class="en-title">Industrial</span>
+                    <span class="en-title">University of</span>
+                    <span class="en-sub">Ho Chi Minh City</span>
+                </div>
+            </div>
+
+            <div class="banner-center-text">
+                <h3>BỘ CÔNG THƯƠNG</h3>
+                <h1>ĐẠI HỌC CÔNG NGHIỆP TP.HỒ CHÍ MINH</h1>
+                <p>Đổi mới - Sáng Tạo - Phát triển bền vững</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>TÍNH ĐIỂM XÉT TUYỂN ĐẠI HỌC NĂM 2026</h2>
+
+        <div class="form-group">
+            <label for="danhMucToHop">Chọn tổ hợp</label>
+            <select name="danhMucToHop" id="danhMucToHop" required>
+                <option value="" disabled selected>Vui lòng chọn tổ hợp</option>
+                <option value="A00">A00: Toán, Vật lý, Hóa học</option>
+                <option value="A01">A01: Toán, Vật lý, Tiếng Anh</option>
+                <option value="A02">A02: Toán, Vật lý, Sinh học</option>
+                <option value="A06">A06: Toán, Địa lý, Hóa học</option>
+                <option value="B00">B00: Toán, Sinh học, Hóa học</option>
+                <option value="B02">B02: Toán, Sinh học, Địa lý </option>
+                <option value="B03">B03: Toán, Sinh học, Ngữ văn</option>
+                <option value="B08">B08: Toán, Sinh học, Tiếng Anh</option>
+                <option value="C00">C00: Ngữ văn, Lịch sử, Địa lý</option>
+                <option value="C01">C01: Ngữ văn, Toán, Vật lý</option>
+                <option value="C02">C02: Ngữ văn, Toán, Hóa học</option>
+                <option value="C03">C03: Ngữ văn, Toán, Lịch sử</option>
+                <option value="C04">C04: Ngữ văn, Toán, Địa lý</option>
+                <option value="C07">C07: Ngữ văn, Vật lý, Lịch sử</option>
+                <option value="D01">D01: Toán, Ngữ văn, Tiếng Anh</option>
+                <option value="D07">D07: Toán, Hóa học, Tiếng Anh</option>
+                <option value="D09">D09: Toán, Lịch sử, Tiếng Anh</option>
+                <option value="D10">D10: Toán, Địa lý, Tiếng Anh</option>
+                <option value="D14">D14: Ngữ văn, Lịch sử, Tiếng Anh</option>
+                <option value="D15">D15: Ngữ văn, Địa lý, Tiếng Anh</option>
+                <option value="X02">X02: Toán, Tin học, Ngữ văn</option>
+                <option value="X26">X26: Toán, Tin học, Tiếng Anh</option>
+                <option value="X71">X71: Ngữ văn, Tin học, Lịch sử</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="selectNganh">Chọn ngành muốn xét tuyển:</label>
+            <select name="selectNganh" id="selectNganh" disabled>
+                <option value="" disabled selected>-- Vui lòng chọn ngành --</option>
+            </select>
+            <p class="note-text">Các chương trình Tăng cường Tiếng Anh có mã ngành kết thúc bằng ký tự "C"</p>
+        </div>
+
+        <div class="form-group">
+            <label class="table-title">Nhập điểm các môn theo tổ hợp:</label>
+            <table class="grade-table">
+                <thead>
+                    <tr>
+                        <th>Môn học</th>
+                        <th>Điểm THPT</th>
+                        <th>Điểm Học Bạ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="lblMon1">Môn 1</td>
+                        <td><input type="number" id="thptMon1" step="0.01" min="0" max="10" value="0"
+                                onfocus="this.select()" required></td>
+                        <td><input type="number" id="hbMon1" step="0.01" min="0" max="10" value="0"
+                                onfocus="this.select()" required></td>
+                    </tr>
+                    <tr>
+                        <td id="lblMon2">Môn 2</td>
+                        <td><input type="number" id="thptMon2" step="0.01" min="0" max="10" value="0"
+                                onfocus="this.select()" required></td>
+                        <td><input type="number" id="hbMon2" step="0.01" min="0" max="10" value="0"
+                                onfocus="this.select()" required></td>
+                    </tr>
+                    <tr>
+                        <td id="lblMon3">Môn 3</td>
+                        <td><input type="number" id="thptMon3" step="0.01" min="0" max="10" value="0"
+                                onfocus="this.select()" required></td>
+                        <td><input type="number" id="hbMon3" step="0.01" min="0" max="10" value="0"
+                                onfocus="this.select()" required></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="note-text">Điểm ưu tiên theo Thông tư 08/2022/TT-BGDĐT Điều 7: Kưu = [(30 - S)] x (Kv + UT) khi S
+                >= 22.5 điểm</p>
+        </div>
+
+        <div class="form-group">
+            <label for="diemDgnlGoc">Điểm thi Đánh Giá Năng Lực (Nhập 0 nếu không có):</label>
+            <input type="number" id="diemDgnlGoc" min="0" max="1139" placeholder="Nhập điểm Đánh Giá Năng Lực">
+            <p class="note-text">Điểm thủ Khoa Đánh giá năng lực năm 2026: 1139 điểm</p>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col">
+                <label for="khuVuc">Khu vực:</label>
+                <select id="khuVuc">
+                    <option value="KV3">KV3 (0 điểm)</option>
+                    <option value="KV1">KV1 (0.75 điểm)</option>
+                    <option value="KV2-NT">KV2-NT (0.5 điểm)</option>
+                    <option value="KV2">KV2 (0.25 điểm)</option>
+                </select>
+            </div>
+
+            <div class="form-group col">
+                <label for="doiTuong">Đối tượng ưu tiên:</label>
+                <select id="doiTuong">
+                    <option value="0">Không thuộc đối tượng ưu tiên (0 điểm)</option>
+                    <option value="1">Đối tượng 1 (2.0 điểm)</option>
+                    <option value="2">Đối tượng 2 (1.0 điểm)</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="diemThanhTich">Điểm thưởng Thành tích nổi bật (Tối đa 1.5 điểm):</label>
+            <select id="diemThanhTich">
+                <option value="0">Không có</option>
+                <option value="0.75">0.75 điểm</option>
+                <option value="1.0">1.0 điểm</option>
+                <option value="1.25">1.25 điểm</option>
+                <option value="1.5">1.5 điểm</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="diemIelts">Điểm thưởng Chứng chỉ ngoại ngữ (Tối đa 1.5 điểm):</label>
+            <select id="diemIelts">
+                <option value="0">Không có</option>
+                <option value="0.5">0.5 điểm</option>
+                <option value="0.75">0.75 điểm</option>
+                <option value="1.0">1.0 điểm</option>
+                <option value="1.25">1.25 điểm</option>
+                <option value="1.5">1.5 điểm</option>
+            </select>
+            <p class="note-text">Lưu ý: Nếu thí sinh chọn thi môn Tiếng Anh trong kì thi TNTHPT sẽ không được quy đổi
+                điểm bằng chứng chỉ ngoại ngữ (nếu có).</p>
+        </div>
+
+        <button onclick="xuLyTinhDiem()">Tính Điểm Xét Tuyển</button>
+
+        <div id="ketQuaBox" class="result-box" style="display: none;">
+            <h3>KẾT QUẢ XÉT TUYỂN CHÍNH THỨC</h3>
+            <div id="chiTietPhuongThuc"></div>
+            <hr>
+            <div class="final-score">Điểm xét tuyển: <span id="diemMax">0.00</span></div>
+        </div>
+
+        <div class="container history-container">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                <h3 style="margin: 0;">Lịch sử tính điểm gần đây</h3>
+                <button onclick="xoaLichSuTinhDiem()" class="btn btn-sm btn-outline-danger"
+                    style="border: 1px solid #dc3545; color: #dc3545; background: transparent; padding: 4px 10px; border-radius: 4px; cursor: pointer; font-size: 0.9rem;">
+                    Xóa lịch sử
+                </button>
+            </div>
+            <div id="historyList">
+                <p class="text-muted">Đang tải lịch sử...</p>
+            </div>
+        </div>
+    </div>
+
+    <p class="footer-ref">
+        Các thông tin tham khảo tại
+        <a href="https://tuyensinh.iuh.edu.vn" target="_blank" class="link-tuyen-sinh">tuyensinhiuh.edu.vn</a>
+
+        <img src="imgs/logo_iuh.png" class="logo-iuh-mini" alt="Logo IUH">
+    </p>
+    <script src="script.js"></script>
+</body>
+
+</html>
